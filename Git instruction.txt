@@ -1,19 +1,42 @@
-BTDHTH
-/Users/romanisaev/R lessons
-BTDHTH
-pwd возвращает путь к теекущей папке
+Основные команды при работе с git
+
+git config --global user.name Имя пользователя
+git config --global user.email Почта
+
+Инициализация git:
+git init Добавление папки .git
+
+
+pwd возвращает путь к текущей папке
 mkdir name создание папки name
 rmdir name удаление папки name
 
 ls просмотр всех файлов в текущей папке
-ls name просмотр всех файллов в папке name
+ls name просмотр всех файлов в папке name
 cat name открытие файла name
 cd name переход в папку name
 cd .. переход на папку выше
 cd переход в основную папку
+
+git add . добавление в очередь коммита всех файлов
+git commit -m 'Описание коммита' Отправка коммита
+
 git log --oneline Логи коммитов
 git checkout commit_id Просмотр коммита по id
 git checkout master Возвращения к текущему коммиту
 git revert commit_id отмена коммита по его id (:wq)
 git resert commit_id удаления всех коммитов до какого-то commit_id (изменения не происходят)
-git resert commit_id --hard удаление всеех коммитов до какого-то commit_id (применяются изменния до commit_id (снизу вверх))
+git resert commit_id --hard удаление всех коммитов до какого-то commit_id (применяются изменения до commit_id (снизу вверх))
+
+Ветки и их объединение:
+git branch branch_name Создание ветки branch_name
+git checkout branch_name Переход на ветку branch_name
+git branch -a  Просмотр всех веток
+git checkout -b branch_name Создание и переход на ветку branch_name
+git merge branch_name Объединение веток master и branch_name (Писать в ветке master)
+
+Связка с github:
+git remote add origin link_to_repository Подключение к гитхаб репозиторию
+git push -u origin branch_name Добавление ветки в репозиториий github
+git clone link_to_repository Клонирование репозитория в текущую папку
+https://github.com/RomanIsaev163/test_with_instruction.git
