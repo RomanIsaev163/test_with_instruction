@@ -1,5 +1,19 @@
 BTDHTH
 /Users/romanisaev/R lessons
 BTDHTH
-git log --oneline логи коммитов
-got checkkout 
+pwd возвращает путь к теекущей папке
+mkdir name создание папки name
+rmdir name удаление папки name
+
+ls просмотр всех файлов в текущей папке
+ls name просмотр всех файллов в папке name
+cat name открытие файла name
+cd name переход в папку name
+cd .. переход на папку выше
+cd переход в основную папку
+git log --oneline Логи коммитов
+git checkout commit_id Просмотр коммита по id
+git checkout master Возвращения к текущему коммиту
+git revert commit_id отмена коммита по его id (:wq)
+git resert commit_id удаления всех коммитов до какого-то commit_id (изменения не происходят)
+git resert commit_id --hard удаление всеех коммитов до какого-то commit_id (применяются изменния до commit_id (снизу вверх))
