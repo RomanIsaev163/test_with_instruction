@@ -30,6 +30,7 @@ git resert commit_id --hard удаление всех коммитов до ка
 
 Ветки и их объединение:
 git branch branch_name Создание ветки branch_name
+git branch -m <newbranch> #rename
 git checkout branch_name Переход на ветку branch_name
 git branch -a  Просмотр всех веток
 git checkout -b branch_name Создание и переход на ветку branch_name
